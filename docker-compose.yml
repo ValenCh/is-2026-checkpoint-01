@@ -59,3 +59,4 @@ services:
           memory: 64M
     networks:
       - teamboard-net
+      

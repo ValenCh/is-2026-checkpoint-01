@@ -71,3 +71,5 @@ Sigue estos pasos para poner en marcha la aplicación de extremo a extremo:
 
 ## 📈 Verificación de Infraestructura
 Para confirmar que el despliegue es correcto, el panel de Portainer debe mostrar los 4 contenedores principales en estado de ejecución estable.
+
+![Captura del contenedor de portainer](docs/image.png)

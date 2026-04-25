@@ -26,7 +26,24 @@ def team():
     try:
         conn = get_db_connection()
         cur = conn.cursor(cursor_factory=RealDictCursor)
-        cur.execute('SELECT * FROM members ORDER BY id ASC;')
+        
+        # Query con JOIN y STRING_AGG para evitar filas duplicadas cuando un miembro tiene más de 1 feature
+        query = '''
+            SELECT 
+                m.id,
+                m.nombre,
+                m.apellido,
+                m.legajo,
+                m.estado,
+                COALESCE(STRING_AGG(f.feature, ' / '), 'Sin asignar') AS feature,
+                COALESCE(STRING_AGG(f.servicio, ' / '), 'Sin asignar') AS servicio
+            FROM members m
+            LEFT JOIN features f ON m.id = f.member_id
+            GROUP BY m.id, m.nombre, m.apellido, m.legajo, m.estado
+            ORDER BY m.id ASC;
+        '''
+        
+        cur.execute(query)
         members = cur.fetchall()
         cur.close()
         conn.close()

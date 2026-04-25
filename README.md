@@ -7,7 +7,7 @@ Este proyecto fue desarrollado por el equipo de **Svenska Solutions** como parte
 
 | Integrante | Legajo | Feature Asignada | Servicio Responsable |
 | :--- | :--- | :--- | :--- |
-| **Valentino Chiappini** | [33072] | **Feature 01**: Coordinación, Infraestructura Base y README | Orquestación (Docker Compose) |
+| **Valentino Chiappini** | [33072] | **Feature 01**: Coordinación, Infraestructura Base y README <br> **Feature 05**: Panel de Monitoreo con Portainer  | Orquestación (Docker Compose) <br> Panel de Monitoreo con Portainer |
 | **Sergio Adrian Maldonado** | [21352] | **Feature 02**: Página Web con HTML y JavaScript | Frontend |
 | **Juan Ignacio Wilt** | [33151] | **Feature 03**: Backend API REST con Python y Flask | Backend |
 | **Álvaro Marini** | [33133] | **Feature 04**: Base de Datos con PostgreSQL | Database |

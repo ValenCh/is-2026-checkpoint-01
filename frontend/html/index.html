@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamBoard - Svenska Solutions</title>
+    <style>
+        body { font-family: system-ui, sans-serif; background: #121212; color: #fff; margin: 2rem; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { padding: 12px; border: 1px solid #333; text-align: left; }
+        th { background: #222; }
+        .status { padding: 8px 12px; border-radius: 4px; font-weight: bold; display: inline-block; margin-bottom: 1rem;}
+    </style>
+</head>
+<body>
+    <h1>Svenska Solutions - TeamBoard</h1>
+    <div id="backend-status" class="status" style="background: #333;">Verificando Backend...</div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre y Apellido</th>
+                <th>Legajo</th>
+                <th>Feature</th>
+                <th>Servicio</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody id="team-table">
+            </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

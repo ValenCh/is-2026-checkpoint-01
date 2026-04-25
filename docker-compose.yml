@@ -59,4 +59,28 @@ services:
           memory: 64M
     networks:
       - teamboard-net
-      
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: teamboard-portainer
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 128M
+    networks:
+      - teamboard-net
+
+networks:
+  teamboard-net:
+    driver: bridge
+
+volumes:
+  pgdata:
+  portainer_data:

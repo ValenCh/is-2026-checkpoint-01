@@ -3,14 +3,14 @@
 **TeamBoard** es una aplicación web integral diseñada para visualizar los integrantes de un equipo de desarrollo, las funcionalidades (features) implementadas por cada uno y el estado de sus respectivos servicios. El sistema utiliza una arquitectura de microservicios orquestada con **Docker Compose**, donde el frontend consume datos de una API REST que, a su vez, consulta una base de datos PostgreSQL persistente.
 
 ## 👥 Tabla de Integrantes y Features
-Este proyecto fue desarrollado por el equipo de **Svenska Solutions** como parte de la materia Ingeniería y Calidad de Software (2026).
+Este proyecto fue desarrollado por el siguiente grupo como parte de la materia Ingeniería y Calidad de Software (2026).
 
 | Integrante | Legajo | Feature Asignada | Servicio Responsable |
 | :--- | :--- | :--- | :--- |
-| **Valentino Chiappini** | [33072] | **Feature 01**: Coordinación, Infraestructura Base y README <br> **Feature 05**: Panel de Monitoreo con Portainer  | Orquestación (Docker Compose) <br> Panel de Monitoreo con Portainer |
-| **Sergio Adrian Maldonado** | [21352] | **Feature 02**: Página Web con HTML y JavaScript | Frontend |
-| **Juan Ignacio Wilt** | [33151] | **Feature 03**: Backend API REST con Python y Flask | Backend |
-| **Álvaro Marini** | [33133] | **Feature 04**: Base de Datos con PostgreSQL | Database |
+| **Valentino Chiappini** | 33072 | **Feature 01**: Coordinación, Infraestructura Base y README <br> **Feature 05**: Panel de Monitoreo con Portainer  | Orquestación (Docker Compose) <br> Panel de Monitoreo con Portainer |
+| **Sergio Adrian Maldonado** | 21352 | **Feature 02**: Página Web con HTML y JavaScript | Frontend |
+| **Juan Ignacio Wilt** | 33151 | **Feature 03**: Backend API REST con Python y Flask | Backend |
+| **Álvaro Marini** | 33133 | **Feature 04**: Base de Datos con PostgreSQL | Database |
 ---
 
 ## 🚀 Instrucciones de Clonación y Ejecución
@@ -19,7 +19,7 @@ Sigue estos pasos para poner en marcha la aplicación de extremo a extremo:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[tu-usuario]/is-2026-checkpoint-01.git
+    git clone https://github.com/ValenCh/is-2026-checkpoint-01.git
     cd is-2026-checkpoint-01
     ```
 
